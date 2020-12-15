@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" >
+<head>
+<meta charset="utf-8">
+<title>Hotel Booking Form</title>
+</head>
+
+<body>
+	<form action="destination.html" method="get">
+	<fieldset>
+		<legend> Personal Details: </legend>
+		
+		 <label for="name"> Username: </label>  <input type="text" name="username" id="name" required autofocus placeholder="Your username" pattern="[a-zA-Z]{3,}" title="Please enter in more than three letters." >
+		 <label for="email"> Email: </label>  <input type="text" name="email"  id="email" required placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter in a valid e-mail adress"> 
+		 <label for="phone">Phone:</label><input type="tel" name="phone" id="phone" required placeholder="Please enter in your phone number" pattern="[0-9]{4}[0-9]{3}[0-9]{2}[0-9]{2}" title="Please enter in a phone number in this format: 0555-555-55-55"> <br>
+		<select name="country" required>
+		<option value=""> Please choose your country </option>
+			<option value="US">US</option>
+			<option value="UK">UK</option>
+			<option value="AUS">AUS</option>
+		</select>
+		</fieldset> <br>
+		<fieldset>
+		<legend>Booking Details</legend>
+			<label for="date" >Booking date:</label><input id="date" type="date" name="date" min="2020-12-15">
+			<label for="numberOfGuests">Number Of Guests:</label><input id="numberOfGuests" type="number" name="numberOfGuests" min="1" max="6" >
+			<p>Do you require meals?</p>
+			<label for="yesMeals">Yes:</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
+			<label for="noMeals">No:</label><input id="noMeals" type="radio" name="meals" value="noMeals">
+			<br>
+			<label for="balcony">Do you require a balcony?</label><input id="balcony" type="checkbox" name="balcony" value="yes" checked >
+		</fieldset>
+	<br>
+		<input type="image" alt=" " src="button.png"  width="10" >
+	</form>
+</body>
+</html>
